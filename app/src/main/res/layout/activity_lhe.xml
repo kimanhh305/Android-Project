@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+   <android.support.v7.widget.Toolbar
+       android:id="@+id/toolbarLienhe"
+       app:title="Liên Hệ"
+       app:titleTextColor="#fafafa"
+       android:background="#08CBD1"
+       android:layout_width="match_parent"
+       android:layout_height="?attr/actionBarSize">
+   </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#fafafa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:textColor="#08CBD1"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:text="Thông tin về chúng tôi"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+        <LinearLayout
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Địa chỉ: 140 Lê Trọng Tấn,Tây Thạnh, Tân Phú, TP.HCM"
+                android:textColor="#08CBD1"
+                android:textSize="20sp"
+                android:layout_margin="30dp"
+                android:gravity="center"></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.LHeActivity" />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.DOAN.doan_android.activity.TTNuActivity">
+    <android.support.v7.widget.Toolbar
+        android:background="#08CBD1"
+        app:titleTextColor="@android:color/white"
+        app:title="Thời Trang Nữ"
+        android:id="@+id/toolbar_thoitrang_nu"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+    </android.support.v7.widget.Toolbar>
+    <ListView
+        android:id="@+id/lv_thoitrangnu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+</LinearLayout>
